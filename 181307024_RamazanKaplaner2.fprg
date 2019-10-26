@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 09:52:19 "/>
+        <attribute name="created" value="MjsgUEMwMjsgMjAxOS0xMC0wMjsgMDk6NDE6MDMgOyAxNTEw"/>
+        <attribute name="edited" value="MjsgUEMwMjsgMjAxOS0xMC0wMjsgMDk6NTI6MTkgOyAxNTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <assign variable="sayi1" expression="0"/>
+            <assign variable="sayi2" expression="0"/>
+            <output expression="&quot;a say&#305;s&#305;n&#305; giriniz&quot;"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;b sayisini giriniz&quot;"/>
+            <input variable="sayi2"/>
+            <if expression="sayi1==sayi2">
+                <then>
+                    <output expression="&quot;sayilar birbirine esittir&quot;"/>
+                </then>
+                <else>
+                    <if expression="sayi1&gt;sayi2">
+                        <then>
+                            <output expression="&quot;a sayisi b sayisindan buyuktur&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;b sayisi a sayisinda buyuktur&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

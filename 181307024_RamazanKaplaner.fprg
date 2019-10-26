@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 09:40:38 "/>
+        <attribute name="created" value="MjsgUEMwMjsgMjAxOS0xMC0wMjsgMDk6MTc6MzAgOyAxNTEz"/>
+        <attribute name="edited" value="MjsgUEMwMjsgMjAxOS0xMC0wMjsgMDk6NDA6MzggOyAxNTE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;bir say&#305; giriniz ?&quot;"/>
+            <declare name="no" type="Integer" array="False" size=""/>
+            <assign variable="no" expression="0"/>
+            <input variable="no"/>
+            <if expression="no==0">
+                <then>
+                    <output expression="&quot;sayi sifir&quot;"/>
+                </then>
+                <else>
+                    <if expression="no%2==0">
+                        <then>
+                            <output expression="&quot;sayi cifttir&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;sayi tektir&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
